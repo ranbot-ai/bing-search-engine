@@ -1,11 +1,11 @@
 # **Company Details Scraper**
 
-This project is a web scraping tool that extracts company details from a specific webpage, including LinkedIn links, company names, industries, specialties, company sizes, headquarters, and descriptions. The project uses Puppeteer for browser automation and web scraping.
+A Puppeteer-based Node.js script designed to scrape company details from LinkedIn via Bing search results. The script automates the process of gathering essential company information, such as the number of employees, industry, specialties, company size, headquarters location, and LinkedIn profile link. The extracted data is useful for data analysis, competitive research, and business intelligence.
 
 ### **Prerequisites**
 
 - Node.js (v14 or above)
-- yarn (Node Package Manager)
+- Yarn (Node Package Manager)
 - Puppeteer
 
 ### **Steps**
@@ -24,6 +24,8 @@ This project is a web scraping tool that extracts company details from a specifi
    ```
 
 ## **Usage**
+
+Clone the repository, install dependencies, and run the script with a company name as an argument to begin data extraction. The script outputs the extracted information in JSON format, making it easy to integrate with other systems or tools.
 
 ### **Basic Usage**
 
@@ -44,15 +46,13 @@ This project is a web scraping tool that extracts company details from a specifi
 3. **View the output:**
    The script will output the extracted details in the console.
 
-## **Features**
+## **Key Features**
 
-- **Company Name:** Extracts the company's name.
-- **LinkedIn Link:** Extracts the company's LinkedIn profile link.
-- **Industry:** Extracts the industry the company operates in.
-- **Specialties:** Extracts the company's specialties.
-- **Company Size:** Extracts the size of the company.
-- **Headquarters:** Extracts the location of the company's headquarters.
-- **Description:** Extracts a brief description of the company.
+- **Automated Scraping:** Utilizes Puppeteer to navigate Bing search results and extract company details from LinkedIn.
+- **Flexible Data Extraction:** Capable of extracting key company metrics like employee count, follower count, industry, specialties, and more.
+- **Randomized User-Agent:** Incorporates multiple user agents to simulate different browsing environments, reducing the likelihood of detection.
+- **Error Handling:** Robust error handling to manage missing elements and avoid script crashes.
+- **Customizable Search:** Allows users to specify the company name to tailor the search results and data extraction.
 
 ## **Example Output**
 
@@ -64,7 +64,9 @@ This project is a web scraping tool that extracts company details from a specifi
   "companySize": "500-1000 employees",
   "headquarters": "San Francisco, CA",
   "linkedInLink": "https://www.linkedin.com/company/example-company/",
-  "description": "Example Company is a leading provider of innovative technology solutions..."
+  "description": "Example Company is a leading provider of innovative technology solutions...",
+  "employeesCount": 43
+  "followers": 234
 }
 ```
 
