@@ -1,0 +1,11 @@
+# data files
+data.csv
+data.json
+.DS_Store
+
+# folders
+node_modules/
+screenshots/*
+screenshot-*
+tmp/
+log/
