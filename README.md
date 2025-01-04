@@ -1,4 +1,4 @@
-# **Company Details Scraper**
+# **LinkedIn Company Details - Public Search Engine**
 
 A Puppeteer-based Node.js script designed to scrape company details from LinkedIn via Bing search results. The script automates the process of gathering essential company information, such as the number of employees, industry, specialties, company size, headquarters location, and LinkedIn profile link. The extracted data is useful for data analysis, competitive research, and business intelligence.
 
